@@ -1,4 +1,9 @@
 # glinetpineapple
 Wifi Pineapple firmware for for GL.iNet GL-AR150
 
-build instructions: http://sapinski.com/2016/02/13/wifi-pineapple-firmware-for-gl-inet-gl-ar150/
+
+build firmware-mod-kit from https://code.google.com/archive/p/firmware-mod-kit/wikis/Documentation.wiki
+extract wifipineapple firmware (https://www.wifipineapple.com/nano) with firmware-mod-kit
+clone https://github.com/domino-team/openwrt-cc
+cp firmware-mod-kit/fmk/rootfs/* openwrt-cc/files/*
+build openwrt-cc.
